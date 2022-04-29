@@ -1,0 +1,34 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.navIcon {
+  text-decoration: none;
+  margin: 2em 2em 1em;
+  color: #ededed;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.navIcon:hover {
+  opacity: 1;
+}
+
+.navIcon::before {
+  transition: 300ms;
+  height: 3px;
+  width: 0%;
+  content: "";
+  position: absolute;
+  background-color: #ededed;
+  top: 25px;
+}
+
+.navIcon:hover::before {
+  width: 100%;
+}
